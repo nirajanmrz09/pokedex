@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { getPokemon } from "../../api/pokemon";
 import CardComponent from "../../components/card";
-import { SimpleGrid, Spinner } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Spinner } from "@chakra-ui/react";
 import Pagination from "../../components/pagination";
 import { useSelector } from "react-redux";
 
@@ -28,7 +28,10 @@ const Pokemon = () => {
     <>
       <Pagination setOffSet={setOffSet} />
       {loading ? (
-        <Spinner />
+        <Flex justifyContent={"center"} alignItems={"center"}>
+          {" "}
+          <Spinner />{" "}
+        </Flex>
       ) : (
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3, xl: 4 }}>
           {!loading &&

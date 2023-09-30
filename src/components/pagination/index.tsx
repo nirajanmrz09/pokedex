@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { getPokemon } from "../../api/pokemon";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import pokedex from "../../assets/pokedex.png";
+import { Box, Flex, Text } from "@chakra-ui/react";
 type PaginationType = {
   setOffSet: any;
 };

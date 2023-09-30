@@ -27,7 +27,11 @@ export const Navbar = () => {
         cursor={"pointer"}
         onClick={() => naigate("/")}
       />{" "}
-      <Flex gap={"10px"} cursor={"pointer"} onClick={() => naigate("/my-team")}>
+      <Flex
+        gap={"10px"}
+        cursor={"pointer"}
+        onClick={() => (count.length === 0 ? null : naigate("/my-team"))}
+      >
         My Team <Image src={pokeball} width={"30px"} height={"30px"} />
       </Flex>
       {count.length > 0 && disableNumber === false && (
