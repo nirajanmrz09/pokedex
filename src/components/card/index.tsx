@@ -164,7 +164,7 @@ const CardComponent = (props: CardComponentProps) => {
                   fontSize={{ base: "10px", md: "14px" }}
                   height={{ base: "25px", md: "40px" }}
                   padding={{ base: "5px", md: "inherit" }}
-                  isDisabled={myPokemon.length === 10 ? true : false}
+                  isDisabled={myPokemon.length === 6 ? true : false}
                 >
                   Add To My Team
                 </Button>
