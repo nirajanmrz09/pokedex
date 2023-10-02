@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "../layout";
 import Pokemon from "../pages/pokemon";
 import MyTeam from "../pages/myTeam";
+import HomeLayout from "../layout/layout";
 
 const Router = () => {
   return (
@@ -11,6 +12,7 @@ const Router = () => {
         <Route path="/" element={<Pokemon />} />
         <Route path="/my-team" element={<MyTeam />} />
       </Route>
+      <Route path="/layout" element={<HomeLayout />} />
 
       {/* ... etc. */}
     </Routes>

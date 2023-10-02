@@ -11,6 +11,7 @@ import store, { persistor } from "./reducers/store.tsx";
 import { BrowserRouter } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import { ChakraProvider } from "@chakra-ui/react";
+import "@fontsource/noto-sans"; // Defaults to weight 400
 
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")!).render(

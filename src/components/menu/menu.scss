@@ -1,0 +1,33 @@
+.menuContainer {
+  padding: 12px 20px;
+  font-size: 14px;
+  overflow: hidden;
+  color: var(--soft-rose, #ffb6c1);
+  text-align: left;
+  text-overflow: ellipsis;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  height: 44px;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.menuActive {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(174, 174, 174, 0.07);
+  &::before {
+    content: "";
+    width: 9px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    border-radius: 4px 0px 0px 4px;
+    background: #ffb6c1;
+    left: 0;
+  }
+}

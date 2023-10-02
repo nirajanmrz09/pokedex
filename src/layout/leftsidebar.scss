@@ -1,0 +1,16 @@
+.leftsidebarContainer {
+  height: 100vh;
+  width: 282px;
+  padding: 24px;
+  background: #15050b;
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    img {
+      width: 149px;
+      height: 46px;
+    }
+  }
+}
